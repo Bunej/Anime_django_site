@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% block head %}
+<title>{{user}} Profile</title>
+{% endblock %}
+
+{% block content %}
+    <h1>Profile</h1>
+    <p>Username: {{ user }}</p>
+    <p>First name: {{ user.first_name }}</p>
+    <p>Last name: {{ user.last_name }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>City: {{ user.userprofile.city }}</p>
+    <p>Description: {{ user.userprofile.description }}</p>
+    {% if user.userprofile.image %}
+        <img src="{{ user.userprofile.image.url }}" width="240">
+    {% endif %}
+    <form class="form-inline my-2 my-md-0" action="{% url 'accounts:edit_profile' %}">
+        <button class="btn btn-success" type="submit"
+                style="margin-top:10px;">Edit</button>
+    </form>
+    <form class="form-inline my-2 my-md-0" action="{% url 'accounts:change_password' %}">
+        <button class="btn btn-success" type="submit"
+                style="margin-top:10px;">Change password</button>
+    </form>
+{% endblock %}

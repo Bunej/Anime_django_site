@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block head %}
+<title>Anime List</title>
+<link rel="stylesheet" type="text/css" href="{% static 'list/style.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="panel-body anime-list text-center">
+        <div class="btn-group btn-group-xs">
+            {% for a in alphabet %}
+                <a href="{{a}}" class="btn">{{a}}</a>
+            {%endfor%}
+        </div>
+    </div>
+{% endblock %}

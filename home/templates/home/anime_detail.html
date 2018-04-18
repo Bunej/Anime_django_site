@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% block head %}
+<title>{{anime.title}} Episodes</title>
+{% endblock %}
+{% block content %}
+<h1>{{anime.title}}</h1>
+<br>
+<h3>Audience: {{anime.genre_audience}}</h3>
+<br>
+<h3>Genre: {{anime.genre}}</h3>
+<br>
+<h2>Episodes:</h2>
+{% for e in episode %}
+<a href="{{e.url}}" target="_blank"><p>{{e.number}}</p></a>
+{% endfor %}
+<div class="row">
+    <div class="comments col-md-9" id="comments">
+        <h3 class="mb-2">Comments:</h3>
+        {% for comment in comment %}
+        <div class="comment mb-2 row">
+            <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+                <a href="{% url 'accounts:profile' comment.user %}"><img class="avatar avatar-50 photo comment_avatar rounded-circle"
+                     height="50" width="50"
+                      src="{{ comment.user.image.url }}"></a>
+            </div>
+            <div class="comment-content col-md-11 col-sm-10">
+                <h6 class="small comment-meta">
+                    <a href="{% url 'accounts:profile' comment.user %}">
+                        {{ comment.user }}</a> {{ comment.created }}</h6>
+                <div class="comment-body">
+                    <p>{{ comment.body }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% if user.is_authenticated %}
+        <a href="{% url 'add_comment' slug=anime.slug  %}">Leave a comment</a>
+        {% else %}
+        <p>Log in to leave a comment</p>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

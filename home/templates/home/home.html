@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+{% block head %}
+<title>Anime Site</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="site-sidebar">
+    <div class="panel panel-default desktop">
+        <div class="panel-heading">
+            <h4 class="panel-title"><i class="fa fa-film"></i>Ongoing</h4>
+        </div>
+        <div class="panel-body list-group">
+            {% for o in ongoing %}
+            {% if o.ongoing == True %}
+
+            <p><a href="{% url 'anime_title' slug=o.slug %}">{{ o.title }}</a></p>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="panel-heading">
+    <h3 class="panel-title">Last Added :</h3>
+</div>
+
+<main>
+    {% for e in e_date|slice:":10" %}
+        <p>{{ e.series }}:<a href={{e.url}} target="_blank"> episode {{e.number}}</a>
+            added: {{e.add_date|timesince}}</p>
+    {% endfor %}
+</main>
+
+{% endblock %}
