@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c08dbb70-da6d-468e-8fb3-f0a3523edb65" name="Default" comment="" />
+    <list default="true" id="c08dbb70-da6d-468e-8fb3-f0a3523edb65" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/anime.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/change_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/edit_profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/ja.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/ja_N9bxjDy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/ja_xgeabhe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/pobrane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/pobrane_NbE5ZfX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/pobrane_rtverma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/pobrane_sCa1SXa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/tokyo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/tokyo_OmkzdRZ.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/media/profile_img/tokyo_aOVMFsn.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/anime/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0002_comment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/home/add_comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/home/anime_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/home/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/templates/list/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/templates/list/ended.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/templates/list/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/list/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/home/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/list/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +76,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
@@ -20,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="630">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -68,6 +133,9 @@
       <find>i class</find>
       <find>profile</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -118,6 +186,7 @@
     <option name="width" value="1094" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -238,7 +307,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18207283" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32997763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -616,23 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/templates/home/genre.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -654,6 +706,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
