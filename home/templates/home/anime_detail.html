@@ -30,6 +30,11 @@
                 <div class="comment-body">
                     <p>{{ comment.body }}</p>
                 </div>
+                {% if comment.user == request.user.userprofile %}
+                    <h6 class="small comment-meta">
+                       <a href="{% url 'edit_comment' slug=anime.slug id=comment.id %}">Edit</a>
+                        <a href="{% url 'delete_comment' slug=anime.slug id=comment.id %}">Delete</a></h6>
+                {% endif %}
             </div>
         </div>
         {% endfor %}

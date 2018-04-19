@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Anime, Episode, Comment
 from .forms import CommentForm
+from accounts.models import UserProfile
+
 
 
 def index(request):
@@ -33,3 +35,28 @@ def add_comment(request, slug):
         form = CommentForm()
         context = {'form': form}
         return render(request, 'home/add_comment.html', context)
+
+
+def edit_comment(request, slug, id=None):
+    anime = get_object_or_404(Anime, slug=slug)
+    comment = get_object_or_404(Comment, id=id)
+    form = CommentForm(request.POST, instance=comment)
+    if request.method == 'POST' or 'GET':
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.anime = anime
+            comment.body
+            comment.save()
+            return redirect('anime_title', slug=slug)
+        else:
+            form = CommentForm()
+            context = {'form': form}
+            return render(request, 'home/edit-comment.html', context)
+
+
+def delete_comment(request, slug , id=None):
+    anime = get_object_or_404(Anime, slug=slug)
+    comment = get_object_or_404(Comment, id=id)
+    if request.method == 'GET':
+        comment.delete()
+        return redirect('anime_title', slug=slug)
