@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+{% block head %}
+<title>Add Anime</title>
+{% endblock %}
+
+{% block content %}
+    <h2>Add Anime</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}

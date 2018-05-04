@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Anime, Episode, Comment
-from .forms import CommentForm
-from accounts.models import UserProfile
-
+from .forms import CommentForm, AnimeForm, EpisodeForm
+from django.contrib.admin.views.decorators import staff_member_required
 
 
 def index(request):
@@ -45,7 +44,6 @@ def edit_comment(request, slug, id=None):
         if form.is_valid():
             comment = form.save(commit=False)
             comment.anime = anime
-            comment.body
             comment.save()
             return redirect('anime_title', slug=slug)
         else:
@@ -60,3 +58,29 @@ def delete_comment(request, slug , id=None):
     if request.method == 'GET':
         comment.delete()
         return redirect('anime_title', slug=slug)
+
+
+@staff_member_required
+def add_anime(request):
+    if request.method == 'POST' or 'GET':
+        form = AnimeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+        else:
+            form = AnimeForm()
+            context = {'form': form}
+            return render(request, 'home/add_anime.html', context)
+
+
+@staff_member_required
+def add_episode(request):
+    if request.method == 'POST' or 'GET':
+        form = EpisodeForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+        else:
+            form = EpisodeForm()
+            context = {'form': form}
+            return render(request, 'home/add_anime.html', context)

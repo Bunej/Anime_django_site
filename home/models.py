@@ -7,7 +7,7 @@ class Anime(models.Model):
     title = models.CharField(max_length=300, unique=True)
     ongoing = models.BooleanField(default=True)
     ended = models.BooleanField(default=False)
-    add_date = models.DateTimeField('Date added')
+    add_date = models.DateTimeField('Date added', auto_now_add=True)
     slug = models.SlugField()
     genre_audience_choices = (('genre_audience_choice1', 'Shounen'),
                               ('genre_audience_choice2', 'Seinen'),
@@ -34,7 +34,7 @@ class Episode(models.Model):
     series = models.ForeignKey(Anime, on_delete=models.CASCADE, verbose_name='Series')
     number = models.CharField('Episode Number', max_length=5)
     url = models.URLField('Episode url')
-    add_date = models.DateTimeField('date added')
+    add_date = models.DateTimeField('date added', auto_now_add=True)
 
     def __str__(self):
         return self.series.title + ' ' + self.number

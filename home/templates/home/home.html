@@ -33,5 +33,9 @@
             added: {{e.add_date|timesince}}</p>
     {% endfor %}
 </main>
+{% if request.user.is_staff %}
+    <a href="{% url 'add_anime' %}"><p>Add Anime</p></a>
+    <a href="{% url 'add_episode' %}"><p>Add Episode</p></a>
+{% endif %}
 
 {% endblock %}
